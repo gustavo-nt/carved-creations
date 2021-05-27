@@ -39,7 +39,7 @@
 O Carved Creations é uma aplicação básica institucional da empresa de materias compressados para fabrição de produtos sobe medidas. 
 
 ### ✅ Demonstração
-<img src="https://github.com/gustavo-nt/carved-creations/blob/master/img/carved-creations-home.PNG"/>
+<img src="https://github.com/gustavo-nt/carved-creations/blob/master/img/carved-creations-home.png"/>
 
 ### ⚙ Pré-requisitos
 
