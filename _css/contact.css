@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:250,400');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@font-face {
+    font-family: QuattrocentoSans-Regular;
+    src: url('../fonts/QuattrocentoSans-Regular.ttf');
+    font-family: QuattrocentoSans-Regular;
+    src: url('../fonts/QuattrocentoSans-Regular.otf');
+}
+
+
+/* Estilização geral para Hiperlinks */
+
+a {
+    text-decoration: none;
+}
+
+
+/* Estilização geral para o Body(corpo do HTML) */
+
+body {
+    background-image: url("../img/bg-body.png");
+    margin: 0px;
+    width: auto;
+    height: auto;
+}
+
+
+/* Configuração com display para colocar Div's lado a lado. */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* Estilização de um elemento situado no header */
+
+div.superior {
+    background-color: #241b18;
+    border-bottom: 1px white solid;
+    width: 100%;
+}
+
+
+/* Estilização de um elemento situado no header */
+
+header.cabecalho {
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    height: 127px;
+}
+
+
+/* Estilização de um elemento situado no header */
+
+div.container-header {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+/* Estilização do menu situado no header */
+
+nav.menu ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav.menu li {
+    font-family: QuattrocentoSans-Regular;
+    font-size: 13px;
+    float: left;
+    margin-right: 40px;
+}
+
+nav.menu ul li {
+    display: inline-block;
+    padding: 2px;
+}
+
+nav.menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav.menu a:hover {
+    color: #cfc311;
+}
+
+
+/* Estilização de um elemento do main */
+
+.estrutura {
+    width: 940px;
+    background-color: #ffffff;
+}
+
+
+/* Estilização de um elemento do main */
+
+.coluna1 {
+    width: 2065px;
+    padding-left: 35px;
+    padding-right: 20px;
+    position: relative;
+}
+
+
+/* Estilização de um elemento do main */
+
+.coluna2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+/* Estilização do(s) titulo(s) do main */
+
+main h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+
+/* Estilização do(s) campo(s) input situados no main */
+
+input.input-main {
+    background-color: #ffffff;
+    width: 400px;
+    height: 30px;
+    font-size: 12px;
+    color: #6c6c6c;
+    border: 3px solid #af8112;
+    margin-top: 7px;
+    outline: none;
+}
+
+
+/* Estilização do(s) campo(s) label situados no main */
+
+label {
+    font-family: QuattrocentoSans-Regular;
+    font-size: 15px;
+    color: #6c6c6c;
+}
+
+
+/* Estilização do(s) subtitulo(s) do main */
+
+main h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: #626161;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* Estilização do(s) paragráfo(s) do main */
+
+main p {
+    font-family: QuattrocentoSans-Regular;
+    font-size: 15px;
+    color: #6c6c6c;
+    line-height: 25px;
+    text-align: justify;
+}
+
+
+/* Estilização de um elemento do main */
+
+main.container a {
+    text-decoration: underline;
+    color: #6c6c6c;
+}
+
+
+/* Estilização do footer */
+
+footer {
+    border-top: 1px solid #ffffff;
+    background-color: #e2b241;
+}
+
+
+/* Estilização de colunas situadas no footer */
+
+.coluna7,
+.coluna8,
+.coluna9 {
+    position: relative;
+    width: 313px;
+    height: 350px;
+    background-color: #e2b241;
+}
+
+
+/* Estilização de titulos(h5) situadas no footer */
+
+.coluna7 h5,
+.coluna8 h5,
+.coluna9 h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: QuattrocentoSans-Regular;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* Estilização de paragráfos situados no footer */
+
+.coluna7 p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    color: #4b3a33;
+}
+
+
+/* Estilização de uma linha situada no footer */
+
+.row {
+    margin-left: 25px;
+}
+
+
+/* Estilização de um elemento presente no footer */
+
+.month {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0;
+    margin-left: 10px;
+    height: 17px;
+    width: 19px;
+}
+
+
+/* Estilização de um elemento presente no footer */
+
+.day {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0;
+    margin-left: 14px;
+    height: 17px;
+    width: 12px;
+}
+
+
+/* Estilização de um elemento presente no footer */
+
+.posts p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    color: #4b3a33;
+    text-align: justify;
+    line-height: 15px;
+    letter-spacing: 1px;
+}
+
+
+/* Estilização do campo input situada no footer */
+
+input.input-footer {
+    background-color: #ffc947;
+    width: 269px;
+    height: 33px;
+    font-size: 12px;
+    color: #af8112;
+    border: 3px solid #af8112;
+    border-radius: 8px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+
+/* Estilização de um elemento presente no footer */
+
+.cadastro {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Estilização de um elemento presente no footer */
+
+.reserved {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    color: #af8112;
+}
+
+
+/* Estilizações do Menu Inferior situado no footer */
+
+nav.menu-footer ul {
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav.menu-footer li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    float: left;
+    margin-right: 10px;
+}
+
+nav.menu-footer ul li {
+    display: inline-block;
+    padding: 2px;
+}
+
+nav.menu-footer a {
+    color: #af8112;
+    text-decoration: none;
+}
+
+
+/* Separador com barras via Background */
+
+div.barra-horizontal {
+    position: absolute;
+    background-image: url(../img/separator-dark.png);
+    height: 6px;
+    width: 88%;
+    top: 290px;
+    left: 34px;
+}
+
+div.barra-vertical {
+    position: absolute;
+    background-image: url(../img/separator-light-vertical.png);
+    height: 100%;
+    width: 6px;
+    top: 0;
+    left: 307px;
+}
+
+div.barra-horizontal-footer {
+    position: absolute;
+    background-image: url(../img/separator-dark.png);
+    height: 6px;
+    width: 100%;
+    top: 343px;
+    left: -1px;
+}
+
+div.barra-horizontal-footer2 {
+    position: absolute;
+    background-image: url(../img/separator-dark.png);
+    height: 6px;
+    width: 92%;
+    top: 158px;
+    left: 25px;
+}
+
+div.barra-vertical-footer {
+    position: absolute;
+    background-image: url(../img/separator-dark-vertical.png);
+    height: 82%;
+    width: 6px;
+    top: 30px;
+    left: 307px;
+}
+
+
+/* Borda Fina para separar algumas sessões */
+
+.borda {
+    border-bottom: 1px solid #ffffff;
+}

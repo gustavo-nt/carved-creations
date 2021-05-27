@@ -1,0 +1,821 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:250,400');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@font-face {
+    font-family: QuattrocentoSans-Regular;
+    src: url('../fonts/QuattrocentoSans-Regular.ttf');
+    font-family: QuattrocentoSans-Regular;
+    src: url('../fonts/QuattrocentoSans-Regular.otf');
+}
+
+
+/* Estilização geral para Hiperlinks */
+
+a {
+    text-decoration: none;
+}
+
+
+/* Estilização geral para o Body(corpo do HTML) */
+
+html,
+body {
+    background-image: url("../img/bg-body.png");
+    margin: 0px;
+    width: auto;
+    height: 100%;
+}
+
+.mobile {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: none;
+}
+
+.mobile label {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.mobile #check {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.mobile input {
+    margin: 0px;
+}
+
+.mobile span {
+    width: 28px;
+    height: 1px;
+    top: 29px;
+    left: 15px;
+    position: absolute;
+    background-color: #fff;
+    transition: all .3s linear;
+}
+
+.mobile span:before {
+    content: '';
+    width: 28px;
+    height: 1px;
+    bottom: -8px;
+    position: absolute;
+    background-color: #fff;
+    transition: all .3s linear;
+}
+
+.mobile span:after {
+    content: '';
+    width: 28px;
+    height: 1px;
+    top: -8px;
+    position: absolute;
+    background-color: #fff;
+    transition: all .3s linear;
+}
+
+.mobile #check:checked ~ span {
+    background-color: transparent
+}
+
+.mobile #check:checked ~ span:before {
+    transform: translate(0px, -9px) rotate(-45deg);
+}
+
+.mobile #check:checked ~ span:after {
+    transform: translate(0px, 7px) rotate(45deg);
+}
+
+.mobile #check:checked ~ label {
+    border-radius: 50%;
+}
+
+
+/* Configuração com display para colocar Div's lado a lado. */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilização de um elemento situado no header */
+
+div.superior {
+    position: fixed;
+    z-index: 10;
+    background-color: #241b18;
+    border-bottom: 1px white solid;
+    width: 100%;
+}
+
+
+/* Estilização de um elemento situado no header */
+
+header.cabecalho {
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    height: 127px;
+}
+
+
+/* Estilização de um elemento situado no header */
+
+div.container-header {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+div.container-header > div > img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilização do menu situado no header */
+
+nav.menu ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav.menu li {
+    font-family: QuattrocentoSans-Regular;
+    font-size: 13px;
+    float: left;
+    margin-right: 40px;
+}
+
+nav.menu ul li {
+    display: inline-block;
+    padding: 2px;
+}
+
+nav.menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav.menu a:hover {
+    color: #cfc311;
+}
+
+/* Configuração Menu Mobile */
+nav.mobile-nav {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background-color: rgba(0,0,0,.904);
+    font-family: QuattrocentoSans-Regular;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .5s linear;
+    opacity: 1;
+    display: none;
+}
+
+nav.mobile-nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 600;
+    list-style: none;
+}
+
+nav.mobile-nav li {
+    padding: 15px;
+}
+
+nav.mobile-nav li:nth-child(1) {
+    padding-top: 25px;
+}
+
+nav.mobile-nav li a {
+    color: white;
+}
+
+nav.mobile-nav li a:hover {
+    color: #f6c246;
+}
+
+
+/* Estilização de um elemento situado no main */
+
+.img-cadeira {
+    background: url(../img/chair.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 470px;
+    min-height: 406px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.img-cadeira > div {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.img-cadeira > div a {
+    text-transform: uppercase;
+}
+
+.img-cadeira .borda {
+    width: 100%;
+    height: 100%;
+    min-width: 360px;
+    max-height: 406px;
+}
+
+
+/* Estilização de titulo(h4) situado no main */
+
+.img-cadeira h4 {
+    font-family: QuattrocentoSans-Regular;
+    font-size: 14px;
+    top: 285px;
+    left: 336px;
+    color: black;
+    margin: 0;
+}
+
+
+/* Estilização de titulo(h3) situado no main */
+
+.img-cadeira h3 {
+    font-family: QuattrocentoSans-Regular;
+    font-size: 24px;
+    top: 303px;
+    left: 336px;
+    color: black;
+    margin: 0;
+}
+
+
+/* Estilização de um elemento situado no main */
+
+.img-box {
+    position: absolute;
+    left: 287px;
+    top: 266px;
+}
+
+
+/* Estilização de paragráfo situado no main */
+
+.img-cadeira a {
+    font-family: QuattrocentoSans-Regular;
+    font-size: 14px;
+    font-weight: bold;
+    top: 343px;
+    left: 340px;
+    text-decoration: none;
+    color: #3d3808;
+}
+
+
+/* Estilização de titulo(h1) situado no main */
+
+.img-cadeira #button {
+    position: absolute;
+    top: 332px;
+    left: 331px;
+}
+
+
+/* Estilização de um elemento situado no main */
+
+.back-text {
+    background: url(../img/bg-pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 469px;
+    min-height: 406px;
+}
+
+.back-text > div {
+    padding-top: 70px;
+}
+
+.back-text .borda {
+    width: 100%;
+    height: 100%;
+    min-width: 360px;
+}
+
+
+/* Estilização de titulo(h2) situado no main */
+
+.back-text h2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    line-height: 45px;
+    font-size: 36px;
+    margin: 0px;
+    left: 91px;
+    top: 80px;
+}
+
+
+/* Estilização de paragráfos situados no main */
+
+.back-text p {
+    font-family: QuattrocentoSans-Regular;
+    text-align: justify;
+    margin: 0px;
+    line-height: 25px;
+    font-size: 14px;
+    left: 52px;
+    top: 240px;
+    width: 363px;
+    height: 92px;
+}
+
+
+/* Estilização de um elemento situado no main */
+
+.coluna1 {
+    position: relative;
+    width: 313px;
+    min-height: 313px;
+    background: #4b3a33;
+}
+
+
+/* Estilização de um elemento situado no main */
+
+.coluna2 {
+    position: relative;
+    width: 313px;
+    min-height: 313px;
+    background: #241b18;
+}
+
+
+/* Estilização de um elemento situado no main */
+
+.coluna3 {
+    position: relative;
+    width: 313px;
+    min-height: 313px;
+    background: #4b3a33;
+}
+
+.coluna1 img,
+.coluna2 img,
+.coluna3 img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Estilização de titulos(h6) situados no main */
+
+.coluna1 h6,
+.coluna2 h6,
+.coluna3 h6 {
+    font-family: 'Oswald', sans-serif;
+    vertical-align: inherit;
+    padding: 0px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 18px;
+    color: #f6c246;
+    font-size: 13px;
+}
+
+
+/* Estilização de paragráfos situados no main */
+
+p.text {
+    font-family: QuattrocentoSans-Regular;
+    color: white;
+    font-size: 13px;
+    margin-top: 5px;
+    padding-left: 18px;
+    padding-right: 10px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+
+/* Estilização de colunas situadas no main */
+
+.coluna4,
+.coluna5,
+.coluna6 {
+    position: relative;
+    width: 313px;
+    height: 252px;
+    background-color: white;
+    margin: 0;
+}
+
+
+/* Estilização de paragráfos situados no main */
+
+.coluna4 p,
+.coluna5 p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    color: #7b7b7b;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+/* Estilização de titulos(h5) situados no main */
+
+.coluna4 h5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+/* Estilização de paragráfo situado no main */
+
+p.paragrafo-blog {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    color: #7b7b7b;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+/* Estilização de um elemento situado no main */
+
+.blog-info {
+    width: 141px;
+    height: 151px;
+    background-color: #dddad3;
+}
+
+
+/* Estilização de paragráfo situado no main */
+
+p.paragrafo-blog1 {
+    font-family: QuattrocentoSans-Regular;
+    font-size: 12px;
+    color: #4b3a33;
+    margin-left: 23px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+
+/* Estilização de titulo(h6) situado no main */
+
+.h6-blog {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    color: #594a43;
+    font-weight: bolder;
+    margin-left: 23px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* Estilização de paragráfo situado no main */
+
+a.paragrafo-blog2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #594a43;
+    font-weight: none;
+    margin-left: 23px;
+    margin-top: 0px;
+}
+
+
+/* Estilização do footer */
+
+footer {
+    border-top: 1px solid #ffffff;
+    background-color: #e2b241;
+}
+
+
+/* Estilização de colunas situadas no footer */
+
+.coluna7,
+.coluna8,
+.coluna9 {
+    position: relative;
+    width: 313px;
+    height: 350px;
+    background-color: #e2b241;
+}
+
+
+/* Estilização de titulos(h5) situadas no footer */
+
+.coluna7 h5,
+.coluna8 h5,
+.coluna9 h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: QuattrocentoSans-Regular;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* Estilização de paragráfos situados no footer */
+
+.coluna7 p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    color: #4b3a33;
+}
+
+
+/* Estilização de uma linha situada no footer */
+
+.row {
+    margin-left: 25px;
+}
+
+
+/* Estilização de um elemento presente no footer */
+
+.month {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0;
+    margin-left: 10px;
+    height: 17px;
+    width: 19px;
+}
+
+
+/* Estilização de um elemento presente no footer */
+
+.day {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0;
+    margin-left: 14px;
+    height: 17px;
+    width: 12px;
+}
+
+
+/* Estilização de um elemento presente no footer */
+
+.posts p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    color: #4b3a33;
+    text-align: justify;
+    line-height: 15px;
+    letter-spacing: 1px;
+}
+
+
+/* Estilização do campo input situada no footer */
+
+input {
+    background-color: #ffc947;
+    width: 269px;
+    height: 33px;
+    font-size: 12px;
+    color: #af8112;
+    border: 3px solid #af8112;
+    border-radius: 8px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+
+/* Estilização de um elemento presente no footer */
+
+.cadastro {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Estilização de um elemento presente no footer */
+
+.reserved {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    color: #af8112;
+}
+
+
+/* Estilizações do Menu Inferior situado no footer */
+
+nav.menu-footer ul {
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav.menu-footer li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    float: left;
+    margin-right: 10px;
+}
+
+nav.menu-footer ul li {
+    display: inline-block;
+    padding: 2px;
+}
+
+nav.menu-footer a {
+    color: #af8112;
+    text-decoration: none;
+}
+
+
+/* Separador com barras via Background */
+
+div.barra-horizontal {
+    background-image: url(../img/separator-light.png);
+    height: 6px;
+}
+
+div.barra-vertical {
+    position: absolute;
+    background-image: url(../img/separator-light-vertical.png);
+    height: 100%;
+    width: 6px;
+    top: 0;
+    left: 307px;
+}
+
+div.barra-horizontal-footer {
+    position: absolute;
+    background-image: url(../img/separator-dark.png);
+    height: 6px;
+    width: 100%;
+    top: 343px;
+    left: -1px;
+}
+
+div.barra-horizontal-footer2 {
+    position: absolute;
+    background-image: url(../img/separator-dark.png);
+    height: 6px;
+    width: 92%;
+    top: 158px;
+    left: 25px;
+}
+
+div.barra-vertical-footer {
+    position: absolute;
+    background-image: url(../img/separator-dark-vertical.png);
+    height: 82%;
+    width: 6px;
+    top: 30px;
+    left: 307px;
+}
+
+
+/* Borda Fina para separar algumas sessões */
+
+.borda {
+    border-bottom: 1px solid #ffffff;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+.scroll-bar::-webkit-scrollbar {
+    height: 7px;
+    background: #d3cfcf;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+    color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 10px;
+}
+
+/* Position: relative não utiliza left, top, bottom e right*/
+
+
+/* Quando formos utilizar Display: flex, não é necessário utilizar Float: left.*/
+
+@media (max-width: 960px){
+    .cabecalho {
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width: 855px) {
+    .menu {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    nav.mobile-nav {
+        display: block;
+        transition: opacity 0.5;
+    }
+
+    .cabecalho {
+        margin-right: 0px;
+    }
+
+    div.main :first-child{
+        flex-wrap: wrap;
+    }
+
+    .scroll-bar {
+        max-width: 626px;
+        overflow-x: hidden;
+        justify-content: end;
+        margin: 0 auto;
+        color: rgba(0, 0, 0, 0);
+        transition: color .3s;
+
+    }
+
+    .scroll-bar:hover {
+        overflow-x: auto;
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+    div.main :last-child {
+        flex-wrap: wrap;
+    }
+
+    .coluna1,
+    .coluna2,
+    .coluna3 {
+        flex-shrink: 0;
+    }
+
+    .img-cadeira {
+        width: 626px;
+    }
+
+    .back-text {
+        width: 626px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    header.cabecalho {
+        height: 60px;
+        padding-top: 25px;
+        padding-bottom: 5px;
+    }
+
+    div.container-header {
+        align-items: center;
+    }
+
+    .container-header #logo {
+        margin-right: 5px;
+    }
+}
