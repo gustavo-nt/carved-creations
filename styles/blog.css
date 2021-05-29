@@ -7,15 +7,9 @@
     src: url('../fonts/QuattrocentoSans-Regular.otf');
 }
 
-
-/* Estilização geral para Hiperlinks */
-
 a {
     text-decoration: none;
 }
-
-
-/* Estilização geral para o Body(corpo do HTML) */
 
 body {
     background-image: url("../img/bg-body.png");
@@ -24,26 +18,17 @@ body {
     height: auto;
 }
 
-
-/* Configuração com display para colocar Div's lado a lado. */
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-/* Estilização de um elemento situado no header */
-
 div.superior {
     background-color: #241b18;
     border-bottom: 1px white solid;
     width: 100%;
 }
-
-
-/* Estilização de um elemento situado no header */
 
 header.cabecalho {
     justify-content: center;
@@ -52,18 +37,12 @@ header.cabecalho {
     height: 127px;
 }
 
-
-/* Estilização de um elemento situado no header */
-
 div.container-header {
     width: 940px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-
-
-/* Estilização do menu situado no header */
 
 nav.menu ul {
     list-style: none;
@@ -91,9 +70,6 @@ nav.menu a:hover {
     color: #cfc311;
 }
 
-
-/* Estilização de um elemento situado no main */
-
 .estrutura {
     width: 940px;
     background-color: #ffffff;
@@ -115,9 +91,6 @@ nav.menu a:hover {
     line-height: 15px;
     letter-spacing: 1px;
 }
-
-
-/* Estilização de um elemento do main */
 
 .coluna1 {
     width: 560px;
@@ -178,16 +151,11 @@ nav.menu3 li {
     padding-bottom: 5px;
 }
 
-
-/* Estilização do footer */
-
 footer {
     border-top: 1px solid #ffffff;
     background-color: #e2b241;
 }
 
-
-/* Estilização de colunas situadas no footer */
 
 .coluna7,
 .coluna8,
@@ -197,9 +165,6 @@ footer {
     height: 350px;
     background-color: #e2b241;
 }
-
-
-/* Estilização de titulos(h5) situadas no footer */
 
 .coluna7 h5,
 .coluna8 h5,
@@ -211,24 +176,15 @@ footer {
     margin-bottom: 15px;
 }
 
-
-/* Estilização de paragráfos situados no footer */
-
 .coluna7 p {
     font-family: 'Oswald', sans-serif;
     font-size: 13px;
     color: #4b3a33;
 }
 
-
-/* Estilização de uma linha situada no footer */
-
 .row {
     margin-left: 25px;
 }
-
-
-/* Estilização de um elemento presente no footer */
 
 .month {
     font-family: 'Oswald', sans-serif;
@@ -240,9 +196,6 @@ footer {
     width: 19px;
 }
 
-
-/* Estilização de um elemento presente no footer */
-
 .day {
     font-family: 'Oswald', sans-serif;
     color: #ffffff;
@@ -253,9 +206,6 @@ footer {
     width: 12px;
 }
 
-
-/* Estilização de um elemento presente no footer */
-
 .posts p {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
@@ -264,9 +214,6 @@ footer {
     line-height: 15px;
     letter-spacing: 1px;
 }
-
-
-/* Estilização do campo input situada no footer */
 
 input {
     background-color: #ffc947;
@@ -282,9 +229,6 @@ input {
     outline: none;
 }
 
-
-/* Estilização de um elemento presente no footer */
-
 .cadastro {
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
@@ -293,17 +237,11 @@ input {
     font-weight: bold;
 }
 
-
-/* Estilização de um elemento presente no footer */
-
 .reserved {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
     color: #af8112;
 }
-
-
-/* Estilizações do Menu Inferior situado no footer */
 
 nav.menu-footer ul {
     list-style: none;
@@ -328,9 +266,6 @@ nav.menu-footer a {
     color: #af8112;
     text-decoration: none;
 }
-
-
-/* Separador com barras via Background */
 
 div.barra-horizontal {
     position: absolute;
@@ -394,9 +329,6 @@ div.barra-vertical-footer {
     top: 30px;
     left: 307px;
 }
-
-
-/* Borda Fina para separar algumas sessões */
 
 .borda {
     border-bottom: 1px solid #ffffff;

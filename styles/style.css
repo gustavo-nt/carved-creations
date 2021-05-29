@@ -7,15 +7,9 @@
     src: url('../fonts/QuattrocentoSans-Regular.otf');
 }
 
-
-/* Estilização geral para Hiperlinks */
-
 a {
     text-decoration: none;
 }
-
-
-/* Estilização geral para o Body(corpo do HTML) */
 
 html,
 body {
@@ -100,17 +94,11 @@ body {
     border-radius: 50%;
 }
 
-
-/* Configuração com display para colocar Div's lado a lado. */
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
-/* Estilização de um elemento situado no header */
 
 div.superior {
     position: fixed;
@@ -120,18 +108,12 @@ div.superior {
     width: 100%;
 }
 
-
-/* Estilização de um elemento situado no header */
-
 header.cabecalho {
     justify-content: center;
     align-items: flex-end;
     display: flex;
     height: 127px;
 }
-
-
-/* Estilização de um elemento situado no header */
 
 div.container-header {
     width: 940px;
@@ -144,8 +126,6 @@ div.container-header > div > img {
     width: 100%;
     height: auto;
 }
-
-/* Estilização do menu situado no header */
 
 nav.menu ul {
     list-style: none;
@@ -173,7 +153,6 @@ nav.menu a:hover {
     color: #cfc311;
 }
 
-/* Configuração Menu Mobile */
 nav.mobile-nav {
     position: fixed;
     z-index: 10;
@@ -215,9 +194,6 @@ nav.mobile-nav li a:hover {
     color: #f6c246;
 }
 
-
-/* Estilização de um elemento situado no main */
-
 .img-cadeira {
     background: url(../img/chair.jpg);
     background-size: cover;
@@ -245,9 +221,6 @@ nav.mobile-nav li a:hover {
     max-height: 406px;
 }
 
-
-/* Estilização de titulo(h4) situado no main */
-
 .img-cadeira h4 {
     font-family: QuattrocentoSans-Regular;
     font-size: 14px;
@@ -256,9 +229,6 @@ nav.mobile-nav li a:hover {
     color: black;
     margin: 0;
 }
-
-
-/* Estilização de titulo(h3) situado no main */
 
 .img-cadeira h3 {
     font-family: QuattrocentoSans-Regular;
@@ -269,17 +239,11 @@ nav.mobile-nav li a:hover {
     margin: 0;
 }
 
-
-/* Estilização de um elemento situado no main */
-
 .img-box {
     position: absolute;
     left: 287px;
     top: 266px;
 }
-
-
-/* Estilização de paragráfo situado no main */
 
 .img-cadeira a {
     font-family: QuattrocentoSans-Regular;
@@ -291,17 +255,11 @@ nav.mobile-nav li a:hover {
     color: #3d3808;
 }
 
-
-/* Estilização de titulo(h1) situado no main */
-
 .img-cadeira #button {
     position: absolute;
     top: 332px;
     left: 331px;
 }
-
-
-/* Estilização de um elemento situado no main */
 
 .back-text {
     background: url(../img/bg-pattern.jpg);
@@ -321,9 +279,6 @@ nav.mobile-nav li a:hover {
     min-width: 360px;
 }
 
-
-/* Estilização de titulo(h2) situado no main */
-
 .back-text h2 {
     font-family: 'Oswald', sans-serif;
     text-align: center;
@@ -333,9 +288,6 @@ nav.mobile-nav li a:hover {
     left: 91px;
     top: 80px;
 }
-
-
-/* Estilização de paragráfos situados no main */
 
 .back-text p {
     font-family: QuattrocentoSans-Regular;
@@ -349,9 +301,6 @@ nav.mobile-nav li a:hover {
     height: 92px;
 }
 
-
-/* Estilização de um elemento situado no main */
-
 .coluna1 {
     position: relative;
     width: 313px;
@@ -359,18 +308,12 @@ nav.mobile-nav li a:hover {
     background: #4b3a33;
 }
 
-
-/* Estilização de um elemento situado no main */
-
 .coluna2 {
     position: relative;
     width: 313px;
     min-height: 313px;
     background: #241b18;
 }
-
-
-/* Estilização de um elemento situado no main */
 
 .coluna3 {
     position: relative;
@@ -386,9 +329,6 @@ nav.mobile-nav li a:hover {
     height: auto;
 }
 
-
-/* Estilização de titulos(h6) situados no main */
-
 .coluna1 h6,
 .coluna2 h6,
 .coluna3 h6 {
@@ -403,9 +343,6 @@ nav.mobile-nav li a:hover {
     font-size: 13px;
 }
 
-
-/* Estilização de paragráfos situados no main */
-
 p.text {
     font-family: QuattrocentoSans-Regular;
     color: white;
@@ -417,9 +354,6 @@ p.text {
     line-height: 20px;
 }
 
-
-/* Estilização de colunas situadas no main */
-
 .coluna4,
 .coluna5,
 .coluna6 {
@@ -429,9 +363,6 @@ p.text {
     background-color: white;
     margin: 0;
 }
-
-
-/* Estilização de paragráfos situados no main */
 
 .coluna4 p,
 .coluna5 p {
@@ -445,9 +376,6 @@ p.text {
     margin-top: 0px;
 }
 
-
-/* Estilização de titulos(h5) situados no main */
-
 .coluna4 h5 {
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
@@ -458,9 +386,6 @@ p.text {
     padding-bottom: 10px;
     text-transform: uppercase;
 }
-
-
-/* Estilização de paragráfo situado no main */
 
 p.paragrafo-blog {
     font-family: 'Oswald', sans-serif;
@@ -474,17 +399,11 @@ p.paragrafo-blog {
     margin-top: 0px;
 }
 
-
-/* Estilização de um elemento situado no main */
-
 .blog-info {
     width: 141px;
     height: 151px;
     background-color: #dddad3;
 }
-
-
-/* Estilização de paragráfo situado no main */
 
 p.paragrafo-blog1 {
     font-family: QuattrocentoSans-Regular;
@@ -494,9 +413,6 @@ p.paragrafo-blog1 {
     margin-bottom: 0;
     padding-left: 0;
 }
-
-
-/* Estilização de titulo(h6) situado no main */
 
 .h6-blog {
     font-family: 'Oswald', sans-serif;
@@ -508,9 +424,6 @@ p.paragrafo-blog1 {
     margin-bottom: 30px;
 }
 
-
-/* Estilização de paragráfo situado no main */
-
 a.paragrafo-blog2 {
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
@@ -521,16 +434,10 @@ a.paragrafo-blog2 {
     margin-top: 0px;
 }
 
-
-/* Estilização do footer */
-
 footer {
     border-top: 1px solid #ffffff;
     background-color: #e2b241;
 }
-
-
-/* Estilização de colunas situadas no footer */
 
 .coluna7,
 .coluna8,
@@ -540,9 +447,6 @@ footer {
     height: 350px;
     background-color: #e2b241;
 }
-
-
-/* Estilização de titulos(h5) situadas no footer */
 
 .coluna7 h5,
 .coluna8 h5,
@@ -554,24 +458,15 @@ footer {
     margin-bottom: 15px;
 }
 
-
-/* Estilização de paragráfos situados no footer */
-
 .coluna7 p {
     font-family: 'Oswald', sans-serif;
     font-size: 13px;
     color: #4b3a33;
 }
 
-
-/* Estilização de uma linha situada no footer */
-
 .row {
     margin-left: 25px;
 }
-
-
-/* Estilização de um elemento presente no footer */
 
 .month {
     font-family: 'Oswald', sans-serif;
@@ -583,9 +478,6 @@ footer {
     width: 19px;
 }
 
-
-/* Estilização de um elemento presente no footer */
-
 .day {
     font-family: 'Oswald', sans-serif;
     color: #ffffff;
@@ -596,9 +488,6 @@ footer {
     width: 12px;
 }
 
-
-/* Estilização de um elemento presente no footer */
-
 .posts p {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
@@ -607,9 +496,6 @@ footer {
     line-height: 15px;
     letter-spacing: 1px;
 }
-
-
-/* Estilização do campo input situada no footer */
 
 input {
     background-color: #ffc947;
@@ -625,9 +511,6 @@ input {
     outline: none;
 }
 
-
-/* Estilização de um elemento presente no footer */
-
 .cadastro {
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
@@ -636,17 +519,11 @@ input {
     font-weight: bold;
 }
 
-
-/* Estilização de um elemento presente no footer */
-
 .reserved {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
     color: #af8112;
 }
-
-
-/* Estilizações do Menu Inferior situado no footer */
 
 nav.menu-footer ul {
     list-style: none;
@@ -671,9 +548,6 @@ nav.menu-footer a {
     color: #af8112;
     text-decoration: none;
 }
-
-
-/* Separador com barras via Background */
 
 div.barra-horizontal {
     background-image: url(../img/separator-light.png);
@@ -716,9 +590,6 @@ div.barra-vertical-footer {
     left: 307px;
 }
 
-
-/* Borda Fina para separar algumas sessões */
-
 .borda {
     border-bottom: 1px solid #ffffff;
 }
@@ -735,11 +606,6 @@ div.barra-vertical-footer {
     border-radius: 6px;
     box-shadow: inset 0 0 0 10px;
 }
-
-/* Position: relative não utiliza left, top, bottom e right*/
-
-
-/* Quando formos utilizar Display: flex, não é necessário utilizar Float: left.*/
 
 @media (max-width: 960px){
     .cabecalho {
