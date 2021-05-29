@@ -40,6 +40,7 @@ O Carved Creations é uma aplicação básica institucional da empresa de materi
 
 ### ✅ Demonstração
 <img src="https://github.com/gustavo-nt/carved-creations/blob/master/img/carved-creations-home.png"/>
+** aplicação não responsiva
 
 ### ⚙ Pré-requisitos
 
