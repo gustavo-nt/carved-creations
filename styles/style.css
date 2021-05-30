@@ -590,6 +590,12 @@ div.barra-vertical-footer {
     left: 307px;
 }
 
+.footer-end {
+    width: 940px; 
+    margin: 0 auto; 
+    justify-content: space-between
+}
+
 .borda {
     border-bottom: 1px solid #ffffff;
 }
@@ -610,6 +616,11 @@ div.barra-vertical-footer {
 @media (max-width: 960px){
     .cabecalho {
         margin: 0px 10px;
+    }
+
+    .footer-end {
+        width: auto;
+        justify-content: center; 
     }
 }
 
@@ -642,16 +653,11 @@ div.barra-vertical-footer {
         margin: 0 auto;
         color: rgba(0, 0, 0, 0);
         transition: color .3s;
-
     }
 
     .scroll-bar:hover {
         overflow-x: auto;
         color: rgba(0, 0, 0, 0.3);
-    }
-
-    div.main :last-child {
-        flex-wrap: wrap;
     }
 
     .coluna1,
@@ -666,6 +672,30 @@ div.barra-vertical-footer {
 
     .back-text {
         width: 626px;
+    }
+
+    .coluna4,
+    .coluna5,
+    .coluna6 {
+        min-width: 313px;
+    }
+
+    .coluna8 {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .coluna7 {
+        display: none;
+    }
+
+    .coluna9 {
+        height: auto;
+    }
+
+    .barra-horizontal-footer {
+        display: none;
     }
 }
 
@@ -683,5 +713,9 @@ div.barra-vertical-footer {
 
     .container-header #logo {
         margin-right: 5px;
+    }
+
+    .footer-end {
+        flex-direction: column;
     }
 }
