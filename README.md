@@ -34,7 +34,7 @@
 - [x] Blog para postagens de contéudos
 - [x] Página de contato com formulário
 
-<h6>** aplicação não responsiva</h6>
+<h6>** aplicação responsiva somente para a página Home</h6>
 
 ### 💻 Projeto
 

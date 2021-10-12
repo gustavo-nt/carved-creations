@@ -542,6 +542,7 @@ nav.menu-footer li {
 nav.menu-footer ul li {
     display: inline-block;
     padding: 2px;
+    margin-bottom: 20px;
 }
 
 nav.menu-footer a {
@@ -649,7 +650,7 @@ div.barra-vertical-footer {
     .scroll-bar {
         max-width: 626px;
         overflow-x: hidden;
-        justify-content: end;
+        justify-content: flex-start;
         margin: 0 auto;
         color: rgba(0, 0, 0, 0);
         transition: color .3s;
@@ -713,6 +714,11 @@ div.barra-vertical-footer {
 
     .container-header #logo {
         margin-right: 5px;
+    }
+
+    .scroll-bar {
+        overflow-x: auto;
+        color: rgba(0, 0, 0, 0.3);
     }
 
     .footer-end {
